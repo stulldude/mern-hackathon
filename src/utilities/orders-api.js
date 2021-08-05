@@ -7,6 +7,11 @@ export function getCart() {
   return sendRequest(`${BASE_URL}/cart`);
 }
 
+// Retrieve paid orders for the logged in user
+export function getUserOrders() {
+  return sendRequest(`${BASE_URL}`)
+}
+
 // Add an item to the cart
 export function addItemToCart(itemId) {
   // Just send itemId for best security (no pricing)

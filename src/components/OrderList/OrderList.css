@@ -1,0 +1,26 @@
+.OrderList > ul {
+  color: var(--text-light);
+  list-style: none;
+  padding: 0;
+}
+
+.OrderList li:hover:not(.active) {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
+}
+  
+.OrderList li.active {
+    color: var(--text-dark);
+    /* background-color: red;
+    border: .1vmin solid var(--tan-3); */
+    margin: -20px;
+}
+
+.OrderList {
+    margin-top: 10px;
+    border: .1vmin solid var(--orange);
+    padding: 10px 40px;
+    border-radius: 25px;
+    background-color: bisque;
+}
